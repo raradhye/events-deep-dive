@@ -1,5 +1,5 @@
 # Summary of events will trigger workflow
-# Pull request when only opened and from main branch or 'dev-* (dev-any letters)' or
+# Pull request when only opened and targetted for the main branch or 'dev-* (dev-any letters)' or
 # feat/** 
 # manully triggered or push into main or dev-* or feat/** and no change in any file in the
 # path .github/workflows/*
@@ -9,13 +9,13 @@ on:
     types:
       - opened
     branches:
-      - main # main branch
+      - master # main branch
       - 'dev-*' # dev-new
       - 'feat/**' # feat/new feat/new/test
   workflow_dispatch:
   push:
     branches:
-      - main # main branch
+      - master # main branch
       - 'dev-*' # dev-new
       - 'feat/**' # feat/new feat/new/test
     path-ignore:
