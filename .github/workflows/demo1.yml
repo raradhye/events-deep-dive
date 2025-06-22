@@ -18,7 +18,7 @@ on:
       - master # main branch
       - 'dev-*' # dev-new
       - 'feat/**' # feat/new feat/new/test
-    path-ignore:
+    paths-ignore:
       - '.github/workflows/*'
 jobs:
   deploy:
